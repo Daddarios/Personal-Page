@@ -1,0 +1,188 @@
+/* * herseyi kapsar*/    /* varsayilan tüm margin-padding degerlerni sifirlatarak baslatiliyoruz*/
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-size: 7px;   /*heryerde varsayilan yazi ebati*/
+                       /*web sitedeki tüm yazilar tek biryeden, yani burdan size alir*/
+   }
+
+body{ /* Ana sayfa yazi tipleri , boyutlari , arka fon renkleri vs.*/
+    font-family: 'Open Sans, sans-serif';
+    color: white;
+    font-size: 1.6rem; /*10px * 1.6 demektir.*/
+    line-height: 1.5;  /*satir arasi mesafe*/
+    text-align: center; /*Yazinin bulundugu alan ortada*/
+    background-color: #333; /*arka duvar rengi*/
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    padding: 1.6rem 0; /* 1.6rem alt+üst  0 sag+sol*/
+}
+
+img{
+    width: 100%;
+    height: auto;
+
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+header{
+        height: 46rem;
+        /*background: lightblue; /*header kismi sayfanin 3te 1 ni kaplar*/
+}
+
+.clearfix::after{
+
+    content: ""; /*bos bir eleman olusturur */
+    display: block;/*tüm satiri kapsar*/
+    clear: both;
+}
+
+header .bg-image{
+    position: absolute;
+    background-image: url(bilder/Pic1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;  /*resimin yazinin arkasinda kalma özelligi*/
+}
+header h1{
+    padding: 12rem;
+    padding-bottom: 0;
+}
+
+.btn{
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    border: 1px solid #666;
+    padding: 1.6rem 3.2rem;
+    margin: 0.5rem 0; 
+    transition: all 0.4s;/*buton renk degisimi süresi*/
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #333;
+
+}
+
+
+#section-a{
+    background-color: #eaeaea;
+    color: #333;
+    padding: 3.2rem 0;
+}
+
+#section-b{
+    padding: 2rem;
+
+}
+#section-b ul{
+    list-style-type: none;
+}
+
+#section-b li{
+    background: #fff;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.col-conten{
+    padding: 1.5rem;
+}
+
+#section-c{
+    background-color: #eaeaea;
+    color: #333;
+    padding: 5rem ;
+}
+
+#section-d .box{
+    padding: 5rem;
+    
+}
+
+#section-d .box:first-child{
+    background-color: rgb(72, 122, 120);
+}
+
+footer{
+    padding: 4rem ;
+    background: black;
+    font-style: italic ;
+    color: darkslategrey;
+    font-size: 13px;
+    
+    
+    
+}
+
+footer a{
+    color:rgb(216, 156, 83);
+    font-style: oblique;
+    text-decoration: underline;
+    
+    
+}
+
+.by:hover{
+    font-size: 1.4rem;
+    transition:  1s;
+   
+
+}
+.box{
+    padding-top: 4rem;
+    
+    width: 50%;
+    float: left;
+}
+    
+
+
+@media screen and (min-width:800px) { /*min 800px ve üzer*/
+    html{
+        font-size: 9px;
+    }
+    
+}
+@media screen and (min-width:1200px){ /*min 1200px ve üzeri*/
+    html{
+        font-size: 11px;
+    }
+    #section-b li{
+        width: 28%;
+        margin: 1%;
+        display: inline-block;/*inline-Block yan yana alicak*/
+
+    }
+
+}
+#youtube:hover{
+    padding: 0.1rem 0 0;
+    margin-left: 0.5rem 0; 
+    border-radius: 10px;
+    font-size: 2rem;
+    background-color: rgb(228, 186, 81);
+    color: black;
+    transition:all 1s;/*buton renk degisimi süresi*/
+    
+}
+
+
+
+
